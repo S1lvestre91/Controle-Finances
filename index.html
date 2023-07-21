@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>FINANCE</title>
+  
+  <!-- HTML -->
+  
+   
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   
+  
+  <header class="cabecalho">
+    <div class="title-page">
+      <h1>Finance$</h1>
+    </div>
+  </header>
+  <main class="conteudo-page">
+  
+    <div class="conteudo-card">
+      <div class="cards">
+        <div class="card">
+          <div class="card-header">
+            <p class="card-titles">RECEITA</p>
+            <p class="sifra-green">$</p>
+          </div>
+          <p id="receita-valor">
+            R$ <span id="rv">0,00</span>
+          </p>
+          
+        </div>
+        
+         <div class="card">
+          <div class="card-header">
+            <p class="card-titles">DESPESA</p>
+            <p class="sifra-red">$</p>
+          </div>
+          <p id="despesa-valor">
+            R$ <span id="dv">0,00</span>
+          </p>
+          
+        </div>
+         <div class="card">
+           <div class="card-header">
+             <p class="card-titles">TOTAL</p>
+             <p class="sifra-blue">$</p>
+           </div>
+           <p id="total-valor">
+             R$ <span id="tv">0,00</span>
+           </p>
+        
+         </div>
+        
+      </div>
+    </div>
+    
+    <section class="formulario">
+      <form class="form" action="">
+        <div class="form-item">
+          <label for="Nome">Nome</label>
+          <input id="Nome" type="text" required>
+        </div>
+        
+        <div class="form-item">
+          <label for="Valor"> Valor</label>
+          <input id="Valor" type="number" required>
+        </div>
+        
+        <div class="form-item-radio">
+          <div class="item-radio">
+            <label for="Receita">Receita</label>
+            <input name="conta" type="radio" id="Receita" value="Receita">
+          </div>
+          
+          <div class="item-radio">
+            <label for="Despesa">Despesa</label>
+            <input name="conta" id="Despesa" type="radio" value="Despesa">
+          </div>
+            
+        </div>
+        <input class="button" id="btn"  type="submit" value="Salvar">
+      </form>
+    </section>
+    <section class="conteudo-table">
+      <table id="tbl" class="tabela">
+        <thead>
+           <tr class="header-table">
+             <th class="">NOME</th>
+             <th class="">VALOR</th>
+             <th class="">TIPO</th>
+             <th class="">REMOVER</th>
+           </tr>
+        </thead>
+       
+        <tbody id="tbl-body">
+         
+        
+        </tbody>
+        
+        
+      </table>
+    </section>
+    
+  </main>
+  <!-- Project -->
+ <script src="scripts/script.js" defer></script>
+ 
+ 
+ 
+ </script>
+</body>
+</html>

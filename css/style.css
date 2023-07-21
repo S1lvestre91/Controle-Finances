@@ -1,0 +1,280 @@
+
+  
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  background-color: gainsboro;
+}
+.cabecalho{
+  height: 30%;
+  background-color: green;
+}
+.title-page > h1{
+   padding: 8rem;
+   text-align: center;
+   font-size: 4rem;
+   color: whitesmoke;
+   font-family: 'Poppins', sans-serif;
+}
+
+.conteudo-page{
+ margin-top: -2rem;
+}
+.conteudo-card{
+  margin: 0 auto;
+  width: 80%;
+  height: auto;
+}
+.cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.card{
+  width: 32%;
+  padding: .5rem;
+  border-radius: .5rem;
+  background-color: whitesmoke;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.card-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-titles{
+  font-weight: bolder;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+#receita-valor{
+  color: green;
+  font-family: 'Poppins';
+  font-weight: 700;
+}
+#despesa-valor{
+  color: red;
+  font-family: 'Poppins';
+  font-weight: 700;
+}
+#total-valor{
+  color: blue;
+  font-family: 'Poppins';
+  font-weight: 700;
+}
+.sifra-green{
+  color: whitesmoke;
+  background-color: green;
+  border: 2px solid green;
+  padding: .2rem .5rem;
+  border-radius: 5rem;
+}
+.sifra-red{
+  background-color: red;
+  color: whitesmoke;
+  border: 2px solid red;
+  padding: .2rem .5rem;
+  border-radius: 5rem;
+}
+.sifra-blue{
+  background-color: blue;
+  color: whitesmoke;
+  border: 2px solid blue;
+  padding: .2rem .5rem;
+  border-radius: 5rem;
+}
+
+
+/* Formulario*/
+.formulario{
+  
+}
+
+label{
+  
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: 'Montserrat' , sans-serif;
+}
+.form{
+  border-radius: .5rem;
+  margin: 0 auto;
+  background-color: whitesmoke;
+  width: 80%;
+  margin-top: 2rem;
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+.form-item{
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  
+}
+.form-item > label{
+  margin-right: .5rem;
+}
+.form-item > input{
+  width: 100%;
+}
+.form-item-radio{
+  
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+.item-radio{
+  display: flex;
+  gap: 0.5rem;
+  padding: 0 0.5rem;
+  align-items: center;
+}
+
+.button{
+    background-color: blue;
+    color: whitesmoke;
+    border-radius: 1em;
+    font-weight: 700;
+    padding: .5rem;
+    width: 10%;
+    outline: none;
+    border: none;
+  }
+#teste{
+  border: 1px solid red;
+}
+/*Tabela*/
+.tabela{
+  
+  background-color: whitesmoke;
+  margin: 2rem auto;
+  width: 80%;
+  border-radius: .5rem;
+}
+.header-table th{
+  font-family: 'Poppins';
+  text-align: center;
+  
+  
+}
+.tabela td{
+  padding: 0.5rem 0;
+  text-align: center;
+
+}
+
+td{
+  word-wrap: break-word;
+  max-width: 5rem;
+  
+  
+}
+.valores-tabela{
+  
+}
+.tipoBlue{
+  color: blue;
+}
+
+.tipoRed{
+  color: red;
+}
+.btnexcluir {
+  background-color: red;
+  padding: 0.5rem 2rem;
+}
+.btnE{
+  border: none;
+}
+img{
+  align-items: center;
+  width: 1.5rem;
+}
+#tbl-body{
+  margin-top: 5rem;
+}
+
+@media  screen and (max-width: 600px){
+  body{
+    
+  }
+  .title-page > h1{
+   padding: 4rem 0;
+   text-align: center;
+   font-size: 3rem;
+   color: whitesmoke;
+   font-family: 'Poppins', sans-serif;
+  }
+  /*Cards*/
+  
+  .cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+ }
+  .card{
+   width: 100%;
+   padding: .5rem;
+   border-radius: .5rem;
+   background-color: whitesmoke;
+  
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 1rem;
+   
+  }
+ /*Formulario*/
+  .form{
+    background-color: whitesmoke;
+    border-radius: .5rem;
+    margin: 0 auto;
+    
+    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+   .form-item{
+     margin: 0.5rem 0;
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+  }
+  .form-item label{
+   margin-bottom: .5rem;
+  }
+  .form-item-radio{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  input{
+    font-size: 1.5rem;
+  }
+  .button{
+    margin-top: 1rem;
+    padding: .2rem;
+    width: 100%;
+  }
+
+}
